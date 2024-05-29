@@ -1,0 +1,666 @@
+
+@font-face {
+    font-family: "Chalet London";
+    src: url("font/chalet-londonnineteenseventy-regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Chalet Paris";
+    src: url("font/chalet-parisnineteensixty-regular.otf") format("opentype");
+    font-weight: light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Avant Garde";
+    src: url("font/avantgarde-demi.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Chalet Paris', 'Roboto', sans-serif;
+}
+
+.font-london{
+    font-family: 'Chalet London', 'Chalet Paris', 'Roboto', sans-serif;
+}
+
+.font-avant{
+    font-family: 'Avant Garde', 'Chalet London', 'Chalet Paris', 'Roboto', sans-serif;
+}
+/* Tamanhos de fontes */
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+h5{
+    font-size: 1rem;
+}
+.form-title{
+    font-size: 1rem;
+}
+.text-small1{
+    font-size: 0.775rem;
+}
+.text-small2{
+    font-size: 0.525rem;
+}
+.h1{
+    font-size: 4rem;
+    line-height: 1;
+}
+.h2{
+    font-size: 3rem;
+    line-height: 1;
+}
+.h3{
+    font-size: 3.1rem;
+    line-height: 1;
+}
+.h4{
+    font-size: 2.2rem;
+    line-height: 1;
+}
+.h5 {
+    font-size: 1.6rem;
+}
+.card-title{
+    font-size: 1.1rem;
+}
+p{
+    font-size: 0.9rem;
+}
+.dot-line{
+    line-height: 1.2rem;
+}
+.modal-backdrop{
+    z-index: 1000;
+}
+/* Cores gerais de textos e backgrounds */
+
+.bg-black{
+    background-color: #010101;
+}
+.border-bottom-orange{
+    border-bottom: 1px solid #eb611c;
+}
+.border-right-white{
+    border-right: 3px solid #ffffff;
+}
+.border-bottom-right-orange{
+    border-bottom: 3px solid #eb611c;
+}
+.text-orange{
+    color: #ff7b00;
+}
+.bg-orange{
+    background-color: #eb611c;
+}
+.text-grey{
+    color: #565653;
+}
+/* Botões */
+
+.btn-default {
+    background: rgb(245,124,0);
+    background: linear-gradient(90deg, rgba(245,124,0,1) 0%, rgba(250,153,53,1) 100%);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.05rem;
+}
+
+.btn-default:hover {
+    background: rgba(250,153,53,1);
+    background: linear-gradient(280deg, rgba(245,124,0,1) 0%, rgba(250,153,53,1) 100%);
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-radio {
+    background-color: white;
+    color: #555;
+    border: 1px solid rgb(245,124,0);;
+    margin-top: -1.5rem;
+}
+
+.btn-radio:hover, input[type=radio]:checked ~ .btn-radio {
+    background: rgba(250,153,53,1);
+    background: linear-gradient(280deg, rgba(245,124,0,1) 0%, rgba(250,153,53,1) 100%);
+    color: white;
+}
+.btn-border{
+    border: 2px solid #ffffff;
+}
+
+/* Banner e conteúdos */
+.w-logo{
+    width: 100%;
+    max-width: 260px;
+}
+#content-1 {
+    background-image: url(../img/background-secao.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+figure {
+    margin:0;
+}
+.rounded-10{
+    border-radius: 10px!important;
+}
+.rounded-top-10{
+    border-top-left-radius: 10px!important;
+    border-top-right-radius: 10px!important;
+}
+#content-1 .container-fluid{
+    max-width: 1450px;
+}
+.card-content::before{
+    content: '';
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    margin-top: 25px;
+}
+.card-content#card-1::before{
+    background-image: url(../img/megas_1.png);
+}
+
+.card-content#card-2::before{
+    background-image: url(../img/megas_2.png);
+}
+
+.card-content#card-3::before{
+    background-image: url(../img/megas_3.png);
+}
+/* Slick */
+.slick-prev:before {
+    content: url(../img/arrow-left.png);
+}
+.slick-next:before {
+    content: url(../img/arrow-right.png);
+}
+
+/* mudar cor dos 'pontos' */
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #ff7b00 !important;
+}
+
+/* Formulário */
+
+    /* Mostra somente um step por vez */
+
+    .form {
+        display: none;
+    }
+
+    #step_1 {
+        display: block
+    }
+
+    /* * -- */
+
+.js-loading-msg {
+    color: #000;
+}
+
+.form-body {
+    min-height: 28rem;
+    border: 2px solid #e94f48;
+    border-radius: 10px;
+}
+.form-control{
+    border: 1px solid #e94f48;
+}
+/* Estilizar mensagem de erro do formulário */
+
+.errors {
+    background-color: #d02626;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.invalid-tooltip {
+    position: absolute;
+    display: inline-block;
+    top: 93%;
+    border-bottom: 1px dotted #ccc;
+    color: white;
+    background-color: #d02626;
+}
+
+.invalid-tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #d02626 transparent;
+}
+
+/* Modal do formulário */
+
+.js-modal-bg-default,
+.js-modal-bg-af {
+    background: hsla(0, 0%, 0%, 0.9);
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.js-form-modal {
+    margin: auto 15px;
+    position: absolute;
+    z-index: 1001;
+    top: 9%;
+    bottom: 3%;
+    right: 0;
+    left: 0;
+}
+
+.js-modal-active {
+    overflow: hidden;
+}
+
+.js-modal-active .js-form-modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.btn-close-modal {
+    font-size: 45px;
+    margin: 5px 14px;
+    color: #fff !important;
+    float: right;
+    font-weight: 700;
+    line-height: 1;
+    opacity: .5;
+    cursor: pointer;
+}
+
+/* Animação do modal do formulário */
+
+.js-scale-up-right {
+    -webkit-animation: scale-up-right 0.5s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+    animation: scale-up-right 0.5s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+}
+
+@-webkit-keyframes scale-up-right {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+    }
+}
+
+@keyframes scale-up-right {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+    }
+}
+
+/* Animação Step Sucesso */
+.form svg {
+    width: 80px;
+    display: block;
+    margin: auto;
+}
+
+.path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+}
+
+.circle {
+    -webkit-animation: dash .9s ease-in-out;
+    animation: dash 0.9s ease-in-out;
+}
+
+.check {
+    stroke-dashoffset: -100;
+    -webkit-animation: dash-check .9s .35s ease-in-out forwards;
+    animation: dash-check 0.9s .35s ease-in-out forwards;
+    stroke-linecap: round;
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes dash-check {
+    0% {
+        stroke-dashoffset: -100;
+    }
+    100% {
+        stroke-dashoffset: 900;
+    }
+}
+
+@keyframes dash-check {
+    0% {
+        stroke-dashoffset: -100;
+    }
+    100% {
+        stroke-dashoffset: 900;
+    }
+}
+
+/* FIM Animação Step Sucesso */
+
+/* Animação Step Insucesso */
+
+.line {
+    stroke-linecap: round;
+    stroke-dashoffset: 1000;
+    -webkit-animation: dash .9s .35s ease-in-out forwards;
+    animation: dash .9s .35s ease-in-out forwards;
+}
+
+.fade-in {
+    fill: #dc3545;
+    stroke: #dc3545;
+    stroke-linecap: round;
+	opacity: 1;
+	animation: fadeInOpacity 0.5s ease-in 1;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Fim Animação Step Insucesso */
+
+/* Media queries */
+
+@media screen and (max-width:330px) {
+    .h2 {
+        font-size: 2.5rem;
+    }
+    .h3 {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .card-title {
+        font-size: 0.7rem;
+    }
+    .h2 {
+        font-size: 1.5rem;
+    }
+    .text-small1 {
+        font-size: 0.475rem;
+    }
+    .h3 {
+        font-size: 2rem;
+    }
+    .h1 {
+        font-size: 3.2rem;
+    }
+    h6 {
+        font-size: 0.9rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+    }
+    .h5 {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 768px){
+    .card-content::before{
+        margin-left: 30px;
+    }
+
+}
+@media screen and (min-width:992px) {
+    .js-form-modal {
+        width: 40%;
+        top: 5%;
+        bottom: 5%;
+        margin: auto;
+    }
+
+    .form-title {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .text-small1 {
+        font-size: 0.575rem;
+    }
+    .h1 {
+        font-size: 3.5rem;
+    }
+    #banner{
+        background-image: url(../img/sombra.png), url(../img/background.jpg);
+        background-size: contain, cover;
+        background-position: left -60px center, left -300px center;
+        background-repeat: no-repeat;
+    }
+
+    .border-bottom-right-orange{
+        border-bottom: 0;
+        border-right: 3px solid #eb611c;
+    }
+    .card-content::after{
+        content: '';
+        background-image: url(../img/defense-desk.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 220px;
+        height: 220px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 11;
+        margin-top: 25px;
+        margin-right: 8px;
+    }
+    .card-content::before {
+        width: 200px;
+        height: 200px;
+        margin-top: 41px;
+        margin-left: 2px;
+
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .modal-dialog {
+        max-width: 600px;
+    }
+    .form-title {
+        font-size: 1.3rem;
+    }
+
+    .text-small1{
+        font-size: 0.875rem;
+    }
+    .text-small2{
+        font-size: 0.625rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .h1 {
+        font-size: 3.8rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+    h5, .h6{
+        font-size: 1.125rem;
+    }
+
+    #banner {
+        background-position: left center, left -180px center;
+    }
+    .card-title{
+        font-size: 1.5rem;
+    }
+    .card-content::before{
+        width: 230px;
+        height: 230px;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+    .card-content::after{
+        width: 230px;
+        height: 230px;
+        margin-top: 26px;
+        margin-right: 25px;
+    }
+
+
+    .dot-line{
+        line-height: 1.5rem;
+    }
+
+}
+@media screen and (min-width:1300px){
+    #banner {
+        background-position: left center, left -100px center;
+    }
+
+    .btn-default {
+        font-size: 1.25rem;
+    }
+    .h1 {
+        font-size: 4rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .card-content::after{
+        width: 240px;
+        height: 240px;
+        margin-top: 22px;
+        margin-right: 36px;
+    }
+}
+@media screen and (min-width:1600px) {
+    h3, .h5{
+        font-size: 2rem;
+    }
+    h5, .h6{
+        font-size: 1.25rem;
+    }
+    .h1{
+        font-size: 4.375rem;
+    }
+    .h2{
+        font-size: 3.75rem;
+    }
+    .h3{
+        font-size: 3.438rem;
+    }
+    .h4{
+        font-size: 2.813rem;
+    }
+
+    .card-title{
+        font-size: 1.75rem;
+    }
+    #banner {
+        background-position: left center, center;
+    }
+    .card-content::before{
+        width: 250px;
+        height: 250px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+    .card-content::after {
+        width: 245px;
+        height: 245px;
+        margin-top: 27px;
+        margin-right: 38px;
+    }
+    .col-xxl-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .ml-xxl-5 {
+        margin-left: 3rem!important;
+    }
+}
