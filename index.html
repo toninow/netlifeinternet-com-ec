@@ -140,6 +140,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         white-space: nowrap; /* Evita que el texto se rompa */
         text-align: center;
     }
+
+    a.btn-link {
+        text-decoration: none;
+    }
+    a.btn-link:hover {
+        text-decoration: none;
+    }
+    
 </style>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -164,19 +172,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </figure>
                 </div>
                 <div class="col-12 col-lg-6 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start">
-                    <button type="button" class="btn btn-custom btn-custom-orange mb-2 mb-lg-0 mr-lg-2">
-                        <i class="fas fa-hand-point-right hand-icon"></i> YA SOY CLIENTE NETLIFE<br>NECESITO SOPORTE
-                    </button>
-                    <button type="button" class="btn btn-custom btn-custom-white">
-                        SERVICIO TÉCNICO<br>CHAT WHATSAPP<i class="fas fa-hand-point-left hand-icon"></i>
-                    </button>
+                    <a href="tel:023920000" class="btn-link">
+                        <button  type="button" class="btn btn-custom btn-custom-orange mb-2 mb-lg-0 mr-lg-2">
+                            <i class="fas fa-hand-point-right hand-icon"></i> <strong>YA SOY CLIENTE NETLIFE<br>NECESITO SOPORTE</strong>
+                        </button>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=593962992996&text=Hola_ARAWEB" class="btn-link">
+                        <button type="button" class="btn btn-custom btn-custom-white" >
+                            <strong>SERVICIO TÉCNICO<br>CHAT WHATSAPP</strong><i class="fas fa-hand-point-left hand-icon"></i>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
         
 </header>
-    <main>
-    <article id="banner" class="py-4 bg-orange">
+    <main style="background-color: white;">
+    <article id="banner" class="py-4 bg-black">
         <div class="container-fluid">
 
             <div class="row align-items-center">
@@ -187,8 +199,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <br class="d-none d-md-block">de <span class="text-orange">ultra alta velocidad</span>
                     </h1>
 
-                    
-
                 </article>
                 <article class="col-lg-4" id="js-form-container">
                     <div id="form">
@@ -196,82 +206,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <script data-b24-form="inline/264/4g6er2" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn.bitrix24.es/b19931065/crm/form/loader_264.js');</script>
     </form>
 
-    <form id="step_2" class="form" novalidate>
-    <input type="hidden" name="uuid">
-    <div class="panel">
 
-        <div class="form-body bg-black text-white d-flex flex-column justify-content-center p-3 p-md-4">
-            <fieldset>
-                <div class="form-row">
-                    <div class="col-12">
-                        <label for="radio_1">¿Ya eres cliente de Netlife?</label>
-                        <div class="form-row">
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <input type="radio" style="opacity: 0" id="cliente_1" name="cliente" value="No"/>
-                                    <label for="cliente_1" class="btn-nao-cliente btn btn-radio btn-block p-2 text-center">
-                                        No
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <input type="radio" style="opacity: 0" id="cliente_2" name="cliente" value="Si"/>
-                                    <label for="cliente_2" class="btn-cliente btn btn-radio btn-block p-2 text-center">
-                                        Si
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="box-cliente" class="form-row mt-2">
-                    <div class="col-12">
-                        <div class="form-group">
-                            <select class="form-control" id="interesse_1" name="interesse">
-                                <option selected disabled hidden>Seleccione una opción</option>
-                                <option value="contactar">Quiero contactar con atención al cliente</option>
-                                <option value="contrar">Quiero contrar el servicio para otra vivienda</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col-12">
-                        <div class="errors text-center"></div>
-                        <button type="submit" class="btn btn-default btn-lg btn-block font-avant">
-                            Llámame ahora
-                        </button>
-                    </div>
-                </div>
-            </fieldset>
-
-        </div>
-    </div>
-</form>
-    <form id="step_sucesso" class="form" novalidate>
-    <input type="hidden" name="uuid">
-    <div class="panel">
-
-        <div class="form-body bg-black text-white d-flex flex-column justify-content-center p-3 p-md-4">
-            <div class="text-center">
-                <div class="form-row mb-4">
-                    <figure class="mx-auto">
-                        <img src="img/logo.png" class="open-form img-fluid mx-auto" alt="Logo Netlife" title="Netlife" />
-                    </figure>
-                </div>
-                <div class="form-row">
-                    <div class="col">
-                        <p class="form-title font-weight-bold text-center pb-2 font-avant">
-                            <span class="text-orange">Gracias</span>, <br>pronto un asesor se contactará contigo
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</form>
 </div>
 <div id="js-mascara" class="js-modal-bg-default"></div>
                 </article>

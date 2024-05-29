@@ -599,6 +599,7 @@ figure {
 @media screen and (min-width:1300px){
     #banner {
         background-position: left center, left -100px center;
+        background-color:White
     }
 
     .btn-default {
