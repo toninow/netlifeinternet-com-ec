@@ -25,6 +25,10 @@
     </noscript>
     <link rel="icon" href="favicon.png"/>
     <!-- head -->
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -60,15 +64,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
 
     #popup {
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #fff;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      z-index: 1000;
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+    }
+
+    /*botones header whatsapp*/
+    .btn-custom-orange {
+        background-color: orange;
+        color: white;
+        font-size: 1rem; /* Tamaño del texto reducido */
+        padding: 0.5rem 1rem; /* Tamaño del botón reducido */
+        border: none;
+        white-space: normal; /* Permite saltos de línea */
+    }
+    .btn-custom-orange:hover {
+        background-color: darkorange;
+    }
+    .btn-custom-white {
+        background-color: white;
+        color: orange;
+        font-size: 1rem; /* Tamaño del texto reducido */
+        padding: 0.5rem 1rem; /* Tamaño del botón reducido */
+        border: 2px solid orange;
+        white-space: normal; /* Permite saltos de línea */
+    }
+    .btn-custom-white:hover {
+        background-color: lightgray;
     }
 </style>
 </head>
@@ -86,19 +114,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- body -->
     
     <header id="header" class="py-3 bg-black border-bottom-orange">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-12 text-center text-lg-left">
-                <figure>
-                    <img src="img/logo.png" class="open-form w-logo" alt="Logo Netlife" title="Netlife" />
-                </figure>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 text-center text-lg-left">
+                    <figure>
+                        <img src="img/logo.png" class="open-form w-logo" alt="Logo Netlife" title="Netlife" />
+                    </figure>
+                </div>
+                <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-start">
+                    <div class="ml-lg-n3">
+                        <button type="button" class="btn btn-custom-orange mr-2">YA SOY CLIENTE NETLIFE<br>NECESITO SOPORTE</button>
+                        <button type="button" class="btn btn-custom-white">SERVICIO TÉCNICO<br>CHAT WHATSAPP</button>
+                    </div>
+                </div>
             </div>
         </div>
-
-    </div>
+        
+        
+        
 </header>
     <main>
-    <article id="banner" class="py-4 bg-black">
+    <article id="banner" class="py-4 bg-orange">
         <div class="container-fluid">
 
             <div class="row align-items-center">
@@ -109,25 +145,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <br class="d-none d-md-block">de <span class="text-orange">ultra alta velocidad</span>
                     </h1>
 
-                    <figure class="col-12 col-lg-7 px-0 mb-4">
-                        <img src="img/splashs.png" class="d-block img-fluid open-form mx-auto mx-lg-0" alt="Hasta 50% de descuento en tus mensualidades*. Hasta 100% de descuento en instalación*.">
-                    </figure>
-
-                    <div class="row align-items-center mb-4 d-none d-md-flex mx-auto mx-lg-0 justify-content-center justify-content-lg-start">
-                        <div>
-                            <figure><img class="img-fluid" src="img/flecha.gif" alt=""></figure>
-                        </div>
-
-                        <div class="mx-1 text-center">
-                            <a href="https://wa.me/message/G6B3TYI37YF3J1" class="btn btn-default btn-lg open-form font-avant d-block">
-                                Conoce nuestras promociones
-                            </a>
-                        </div>
-
-                        <div >
-                            <figure><img class="img-fluid" src="img/flecha-right.gif" alt=""></figure>
-                        </div>
-                    </div>
+                    
 
                 </article>
                 <article class="col-lg-4" id="js-form-container">
