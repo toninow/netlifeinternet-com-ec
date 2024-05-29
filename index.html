@@ -98,6 +98,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .btn-custom-white:hover {
         background-color: lightgray;
     }
+
+    @media (max-width: 576px) {
+        .btn-custom {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .btn-custom {
+            width: auto;
+        }
+    }
+
+     /* Animación para el ícono de mano */
+     @keyframes handBounce {
+        0%, 100% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(-5px);
+        }
+    }
+
+    .hand-icon {
+        animation: handBounce 1s infinite;
+        margin-right: 10px;
+        position: relative;
+        top: 1px; /* Ajusta este valor para mover el ícono más abajo */
+    }
+
+    /* Estilos para botones de tamaño fijo */
+    .btn-custom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px; /* Altura fija para los botones */
+        min-width: 220px; /* Ancho mínimo para los botones */
+        padding: 10px; /* Espaciado interno */
+        white-space: nowrap; /* Evita que el texto se rompa */
+        text-align: center;
+    }
 </style>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -116,21 +158,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header id="header" class="py-3 bg-black border-bottom-orange">
         <div class="container-fluid">
             <div class="row align-items-center">
-                <div class="col-12 col-lg-6 text-center text-lg-left">
+                <div class="col-12 col-lg-6 text-center text-lg-left mb-3 mb-lg-0">
                     <figure>
                         <img src="img/logo.png" class="open-form w-logo" alt="Logo Netlife" title="Netlife" />
                     </figure>
                 </div>
-                <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-start">
-                    <div class="ml-lg-n3">
-                        <button type="button" class="btn btn-custom-orange mr-2">YA SOY CLIENTE NETLIFE<br>NECESITO SOPORTE</button>
-                        <button type="button" class="btn btn-custom-white">SERVICIO TÉCNICO<br>CHAT WHATSAPP</button>
-                    </div>
+                <div class="col-12 col-lg-6 d-flex flex-column flex-lg-row justify-content-center justify-content-lg-start">
+                    <button type="button" class="btn btn-custom btn-custom-orange mb-2 mb-lg-0 mr-lg-2">
+                        <i class="fas fa-hand-point-right hand-icon"></i> YA SOY CLIENTE NETLIFE<br>NECESITO SOPORTE
+                    </button>
+                    <button type="button" class="btn btn-custom btn-custom-white">
+                        SERVICIO TÉCNICO<br>CHAT WHATSAPP<i class="fas fa-hand-point-left hand-icon"></i>
+                    </button>
                 </div>
             </div>
         </div>
-        
-        
         
 </header>
     <main>
@@ -463,10 +505,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="col-sm-12 text-center">
           <div class="row">
             <div class="col-sm-6">
-              <h4><a style="color:white" href="https://www.netlife.ec/terminosycondicionesdistribuidorautorizado/">Términos y condiciones</a></h4>
+              <h6><a style="color:white" href="https://www.netlife.ec/terminosycondicionesdistribuidorautorizado/">Términos y condiciones</a></h6>
             </div>
             <div class="col-sm-6">
-              <h4><a style="color:white" href="https://www.netlife.ec/politica-privacidad-dist/">Política de privacidad</a></h4>
+              <h6><a style="color:white" href="https://www.netlife.ec/politica-privacidad-dist/">Política de privacidad</a></h6>
             </div>
           </div>
         </div>
