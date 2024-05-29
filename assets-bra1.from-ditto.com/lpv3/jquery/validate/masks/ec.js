@@ -1,1 +1,0 @@
-$('.as-mask-phone-default').mask('000 000 0000');$('.as-mask-money').mask("#.##0,00",{reverse:true});$('.as-mask-cedula-default').mask('0000000000');$('.as-mask-placa-default').mask('SSS0000');

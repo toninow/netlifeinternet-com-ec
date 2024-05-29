@@ -1,2 +1,0 @@
-var dominios=['hotmail.com','gmail.com','yahoo.com','outlook.com'];$('input[name="email"]').autoComplete({minChars:2,source:function(typeahead,suggest){var $posicaoArroba=typeahead.indexOf('@');if($posicaoArroba===-1){return;}
-var username=typeahead.substring(0,$posicaoArroba+1);var sugestoesSemFiltro=$.map(dominios,function(item){return username+item;});var sugestoesComFiltro=$.grep(sugestoesSemFiltro,function(item){return item.indexOf(typeahead)>-1;});suggest(sugestoesComFiltro);}});
